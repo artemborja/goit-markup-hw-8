@@ -35,7 +35,7 @@
 
 .features__text {
   @include font(400, 14px, 1.71, 0.03em);
-  color: var(--color-text-secondary);
+  color: var(--color-text);
   @include tablet {
     text-align: left;
   }
