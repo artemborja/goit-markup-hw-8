@@ -1,0 +1,36 @@
+.filters {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 35px;
+  }
+}
+
+.filters__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+.filters__btn {
+  height: 38px;
+  @include font(500, 16px, 1.625, 0.03em);
+  margin-right: 8px;
+  margin-bottom: 15px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: var(--color-bgr-content);
+  border: 0;
+  cursor: pointer;
+  transition: color 250ms var(--animating),
+    background-color 250ms var(--animating);
+  &:hover,
+  &:focus {
+    color: var(--color-white);
+    background-color: var(--color-logo);
+  }
+}

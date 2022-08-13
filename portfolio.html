@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="header__link-logo">
+          <span class="logo-web">Web</span>Studio</a
+        >
+        <nav class="header__navigate">
+          <ul class="header__list list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link">Студия</a>
+            </li>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link actual"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header__connection">
+          <ul class="header__connect-list list">
+            <li class="header__connect-item">
+              <a href="mailto:info@devstudio.com" class="header__link-contact"
+                ><svg class="header__envelope">
+                  <use
+                    class="hidden"
+                    href="./images/env-smart-sprite.svg#icon-envelope"
+                  ></use>
+                  <use
+                    class="appear"
+                    href="./images/env-smart-sprite.svg#icon-envelope-desktop"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header__connect-item">
+              <a href="tel:+380961111111" class="header__link-contact"
+                ><svg class="header__smartphone">
+                  <use
+                    class="hidden"
+                    href="./images/env-smart-sprite.svg#icon-smartphone"
+                  ></use>
+                  <use
+                    class="appear"
+                    href="./images/env-smart-sprite.svg#icon-smartphone-desktop"
+                  ></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button
+          class="header__button is-open"
+          type="button"
+          aria-expanded="false"
+          data-menu-open
+        >
+          <svg
+            class="header__picture"
+            width="40px"
+            height="40px"
+            aria-label="пермикач мобільного меню"
+          >
+            <use
+              class="header__icon-menu"
+              href="./images/new-sprite.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="backdrop is-hidden" data-menu>
+        <div class="mobil-modal">
+          <button class="mobil-modal__btn" type="button" data-menu-close>
+            <svg class="mobil-modal__picture" width="40px" height="40px">
+              <use href="./images/new-sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <nav class="mobil-modal__navigate">
+            <ul class="mobil-modal__list list">
+              <li class="mobil-modal__item">
+                <a href="./index.html" class="mobil-modal__link curent"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobil-modal__item">
+                <a href="./portfolio.html" class="mobil-modal__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobil-modal__item">
+                <a href="#" class="mobil-modal__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobil-modal__connection">
+            <ul class="mobil-modal__connect-list list">
+              <li class="mobil-modal__connect-item">
+                <a href="tel:+380961111111" class="mobil-modal__phone"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobil-modal__connect-item">
+                <a href="mailto:info@devstudio.com" class="mobil-modal__mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobil-modal__social list">
+            <li class="mobil-modal__social-item">
+              <a href="" class="mobil-modal__social-link">Instagram</a>
+            </li>
+            <li class="mobil-modal__social-item before">
+              <a href="" class="mobil-modal__social-link">Twitter</a>
+            </li>
+            <li class="mobil-modal__social-item before">
+              <a href="" class="mobil-modal__social-link">Facebook</a>
+            </li>
+            <li class="mobil-modal__social-item before">
+              <a href="" class="mobil-modal__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="filters">
+        <div class="container">
+          <h2 class="visualy-hidden">filters</h2>
+          <ul class="filters__list list">
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Все</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Приложения</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Дизайн</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="container">
+          <ul class="cards__list list">
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img1-tablet.webp    1x,
+                        ./images/img1-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img1-tablet.jpg    1x,
+                        ./images/img1-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img1-desktop.webp    1x,
+                        ./images/img1-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img1-desktop.jpg    1x,
+                        ./images/img1-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      class="cards__picture"
+                      src="./images/img1@2.jpg"
+                      alt="laptop"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">Технокряк</h3>
+                  <p class="cards__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img2.webp 1x, ./images/img2@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/img2-tablet.webp    1x,
+                        ./images/img2-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img2-tablet.jpg    1x,
+                        ./images/img2-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img2-desktop.webp    1x,
+                        ./images/img2-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img2-desktop.jpg    1x,
+                        ./images/img2-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="cards__picture"
+                      src="./images/img2@2.jpg"
+                      alt="bascetbal"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="cards__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/img3-tablet.webp    1x,
+                        ./images/img3-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img3-tablet.jpg    1x,
+                        ./images/img3-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img3-desktop.webp    1x,
+                        ./images/img3-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img3-desktop.jpg    1x,
+                        ./images/img3-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="cards__picture"
+                      src="./images/img3.jpg"
+                      alt="seafood"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">Ресторан Seafood</h3>
+                  <p class="cards__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img4.webp 1x, ./images/img4@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img4-tablet.webp    1x,
+                        ./images/img4-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img4-tablet.jpg    1x,
+                        ./images/img4-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img4-desktop.webp    1x,
+                        ./images/img4-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img4-desktop.jpg    1x,
+                        ./images/img4-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      class="cards__picture"
+                      src="./images/img4.jpg"
+                      alt="headphons"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">Проект Prime</h3>
+                  <p class="cards__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img5.webp 1x, ./images/img5@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img5-tablet.webp    1x,
+                        ./images/img5-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img5-tablet.jpg    1x,
+                        ./images/img5-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img5-desktop.webp    1x,
+                        ./images/img5-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img5-desktop.jpg    1x,
+                        ./images/img5-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      class="cards__picture"
+                      src="./images/img5.jpg"
+                      alt="boxes"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">Проект Boxes</h3>
+                  <p class="cards__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img6.webp 1x, ./images/img6@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img6-tablet.webp    1x,
+                        ./images/img6-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img6-tablet.jpg    1x,
+                        ./images/img6-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img6-desktop.webp    1x,
+                        ./images/img6-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img6-desktop.jpg    1x,
+                        ./images/img6-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      class="cards__picture"
+                      src="./images/img6.jpg"
+                      alt="screen"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">Inspiration has no Borders</h3>
+                  <p class="cards__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img7.webp 1x, ./images/img7@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img7-tablet.webp    1x,
+                        ./images/img7-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img7-tablet.jpg    1x,
+                        ./images/img7-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img7-desktop.webp    1x,
+                        ./images/img7-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img7-desktop.jpg    1x,
+                        ./images/img7-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      class="cards__picture"
+                      src="./images/img7.jpg"
+                      alt="book"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">Издание Limited Edition</h3>
+                  <p class="cards__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img8.webp 1x, ./images/img8@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img8.jpg 1x, ./images/img8@2x.jpg 2x"
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img8-tablet.webp    1x,
+                        ./images/img8-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img8-tablet.jpg    1x,
+                        ./images/img8-tablet@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img8-desktop.webp    1x,
+                        ./images/img8-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img8-desktop.jpg    1x,
+                        ./images/img8-desktop@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      class="cards__picture"
+                      src="./images/img8.jpg"
+                      alt="tag"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">Проект LAB</h3>
+                  <p class="cards__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="#" class="cards__link">
+                <div class="cards__picture-container">
+                  <picture>
+                    <source
+                      srcset="./images/img9.webp 1x, ./images/img9@2x.webp 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/img9.jpg 1x, ./images/img9@2x.jpg 2x"
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img9-tablet.webp    1x,
+                        ./images/img9-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img9-tablet.jpg    1x,
+                        ./images/img9-tablet@2x.jpg 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img9-desktop.webp    1x,
+                        ./images/img9-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img9-desktop.jpg    1x,
+                        ./images/img9-desktop@2x.jpg 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      class="cards__picture"
+                      src="./images/img9.jpg"
+                      alt="work in leptop"
+                    />
+                  </picture>
+                  <div class="cards__animating">
+                    <p class="cards__animating-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="cards__text-container">
+                  <h3 class="cards__header">Growing Business</h3>
+                  <p class="cards__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="container-address">
+          <address class="address">
+            <a href="./index.html" class="footer__link">
+              <span class="logo-web">Web</span>Studio
+            </a>
+            <a
+              href="https://goo.gl/maps/ZqeTFEpqozLa5zfj9"
+              class="address__link"
+              target="_blank"
+              rel="noopener nofollow"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+            <ul class="address__list list">
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="address__email"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__phon"
+                  >+380991111111</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social-foot">
+            <p class="social-foot__headline">присоединяйтесь</p>
+            <ul class="social-foot__list list">
+              <li class="social-foot__item">
+                <a href="#" class="social-foot__link">
+                  <svg class="social-foot__picture" width="22px" height="22px">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-foot__item">
+                <a href="#" class="social-foot__link">
+                  <svg class="social-foot__picture" width="22px" height="22px">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-foot__item">
+                <a href="#" class="social-foot__link">
+                  <svg class="social-foot__picture" width="22px" height="22px">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-foot__item">
+                <a href="#" class="social-foot__link">
+                  <svg class="social-foot__picture" width="22px" height="22px">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="join">
+          <p class="join__text">Подпишитесь на рассылку</p>
+          <div class="join__container">
+            <label>
+              <input class="join__input" type="email" placeholder="E-mail" />
+            </label>
+            <button class="join__btn" type="submit">
+              Подписаться
+              <svg class="join__picture" width="24px" height="24px">
+                <use href="./images/new-sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

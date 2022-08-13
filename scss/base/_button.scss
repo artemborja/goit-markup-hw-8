@@ -1,0 +1,28 @@
+%button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-white);
+  background-color: var(--color-logo);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  border: 0;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+  &:hover,
+  &:focus {
+    background-color: var(--color-btn-hover);
+    box-shadow: var(--shedow-btn-hover);
+  }
+  &:active {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+  --color-text-main: #212121;
+  --color-text: #757575;
+  --color-bgr-main: #c4c4c4;
+  --color-bgr-content: #f5f4fa;
+  --color-white: #fff;
+  --color-logo: #2196f3;
+  --color-btn-hover: #188ce8;
+  --color-svg: #afb1b8;
+  --color-bgr-footer: #2f303a;
+  --color-header-line: #ececec;
+
+  --animating: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --shedow-team-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shedow-btn-hover: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shedow-portfolio-cards: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --shedow-btn-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
